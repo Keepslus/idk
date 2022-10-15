@@ -1,9 +1,0 @@
-<html>
-<head>
-<title>janokee.cf</title>
-</head>
-
-<body>
-heellooooooo!
-</body>
-</html>
