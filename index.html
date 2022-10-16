@@ -1,21 +1,29 @@
 <!DOCTYPE html>
-<style>
-body {
-  background-image: url('https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-036.jpg');
-}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Webhook Tutorial</title>
+  </head>
+  <body>
+    <button onclick="sendMessage()">Send</button>
+  </body>
 
+  <script>
+    const has = prompt("co")
+    function sendMessage() {
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/1031273977118740501/IsAWXX8MZ6akhfXsBKtH00HAbZO1QooRf6RcwH5x9My_gYv1Y587Q8sW6xPGO6EcPV2r");
 
-</style>
+      request.setRequestHeader('Content-type', 'application/json');
 
-<head>
-<title>janokee.cf</title>
-</head>
+      const params = {
+        username: "Wiadomość z janokee.cf",
+        avatar_url: "",
+        content: has
+      }
 
-<body>
-<H1>
-janokee.cf <b>2022</b>
-</H1>
-
-</body>
-
+      request.send(JSON.stringify(params));
+    }
+  </script>
 </html>
